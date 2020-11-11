@@ -45,6 +45,8 @@ Si acortamos los tiempos del tunel, podremos observar que algunos hilos salen de
 
 ## Ejercicio 3
 
+### Version 1.0
+
 En este ejercicio vamos a trabajar los locks (from threading import Lock). Para declarar un lock: lock = Lock().
 
 Realizar un programa que genere 20 hilos a partir del programa principal.
@@ -56,3 +58,9 @@ Finalmente, desde el programa principal, esperamos a que finalicen para juntarlo
 La salida que tenemos que observar es una lista de inicio de procesos ordenada y sin embargo una lista de procesos finalizados desordenada.
 
 ![Screenshot](/capturas/2020-11-11%20(6).png)
+
+### Version 2.0
+
+Estudio del funcionamiento de los hilos con la sentencia lock.acquire(blocking=False)
+
+Leer bebiendo.pdf que es mi entrada a un foro sobre hilos
