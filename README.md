@@ -15,5 +15,11 @@ La salida que tenemos que observar es una lista de inicio de procesos ordenada y
 ### Version 1
 
 Prototipo para 5 hilos puestos a piñon
+
 ![Screenshot](/capturas/2020-11-11.png)
 
+### Version 2
+
+Hilos creados con un for (hay que hacer un for para cada estado del hilo; sino no funciona bien)
+
+![Screenshot](/capturas/2020-11-11%20(1).png)
