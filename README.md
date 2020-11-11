@@ -38,7 +38,21 @@ Finalmente, desde el programa principal, esperamos a que finalicen para juntarlo
 La salida que tenemos que observar es una lista de inicio de procesos ordenada y sin embargo una lista de procesos finalizados desordenada.
 
 Resultado para 5 hilos (se ve mejor)
+
 ![Screenshot](/capturas/2020-11-11%20(2).png)
 
 Si acortamos los tiempos del tunel, podremos observar que algunos hilos salen del tunel antes de que otros entren al tunel.
 
+## Ejercicio 3
+
+En este ejercicio vamos a trabajar los locks (from threading import Lock). Para declarar un lock: lock = Lock().
+
+Realizar un programa que genere 20 hilos a partir del programa principal.
+
+Cada hilo ejecutará una función en la que simularemos 20 personas bebiendo de un vaso. Cada hilo accede al lock, durante un segundo beberá del vaso y al liberarlo, imprimimos que el hilo con número está satisfecho y a continuación se ejecutará el siguiente hilo.
+
+Finalmente, desde el programa principal, esperamos a que finalicen para juntarlos y mostramos un mensaje final indicando que el programa ha finalizado.
+
+La salida que tenemos que observar es una lista de inicio de procesos ordenada y sin embargo una lista de procesos finalizados desordenada.
+
+![Screenshot](/capturas/2020-11-11%20(6).png)
