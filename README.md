@@ -64,3 +64,18 @@ La salida que tenemos que observar es una lista de inicio de procesos ordenada y
 Estudio del funcionamiento de los hilos con la sentencia lock.acquire(blocking=False)
 
 Leer bebiendo.pdf que es mi entrada a un foro sobre hilos
+
+## Ejercicio 4
+
+En este ejercicio vamos a trabajar los Conditions (from threading import Condition). Este tipo de bloqueo son los más sofisticados ya que tenemos las funciones de .notify(), .wait(), .release(), .acquire().
+Para declarar un lock: cond = Condition().
+
+Realizar un programa que genere 20 hilos a partir del programa principal.
+
+Cada hilo ejecutará una función en la que simularemos 20 personas bebiendo de un vaso. En este caso cada hilo tomará el semáforo, mientras pueda, sino esperará 0,5s hasta poder adquirirlo (trabajamos los tiempos de espera de los procesos), una vez conseguimos acceder al semáforo, ejecutamos la función que nos da la posibilidad de beber. Bebemos durante un tiempo aleatorio (from random import randint, s = randint(1,10)), al finalizar avisamos al siguiente proceso en espera y liberamos la condición.
+
+La salida que tenemos que observar es una lista de inicio de procesos ordenada y sin embargo una lista de procesos finalizados desordenada.
+
+Vista para 5 hilos.
+
+![Screenshot](/capturas/2020-11-11%20(7).png)
